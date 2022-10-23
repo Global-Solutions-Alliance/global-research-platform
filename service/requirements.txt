@@ -1,4 +1,5 @@
-git+git://github.com/ProjectDrawdown/solutions@v0.11.2
+# Once we normalize release use this instead (git+git://github.com/Global-Solutions-Alliance/solutions@vxx.xx.x)
+https://github.com/Global-Solutions-Alliance/solutions/releases/download/v0.0.0/Archive.zip
 aiohttp==3.7.3
 alembic==1.4.3
 aioredis==1.3.1
