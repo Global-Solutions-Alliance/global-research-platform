@@ -20,7 +20,7 @@ const LoginPage = () => {
         py={6}
         mx="auto"
       >
-        Welcome to the Drawdown Global Research Platform
+        Welcome to the Global Research Platform Interface
       </Heading>
       <VStack
         maxWidth="xl"

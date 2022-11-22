@@ -1,6 +1,6 @@
-# Contributing to Drawdown Solutions
+# Contributing to Global Solution Alliance Software Interface
 
-Welcome to the Drawdown Solutions repository! We're excited that you're here and want to help
+Welcome to the GSA Software Interface repository! We're excited that you're here and want to help
 with solutions to climate change.
 
 These guidelines are designed to make it as easy as possible to get involved. If you have any
@@ -35,7 +35,7 @@ The current list of issue labels are [here][link_labels] and include:
 
 ## Making a change
 
-We appreciate all contributions to Drawdown Solutions, but those most easily accepted will follow a workflow
+We appreciate all contributions to GSA Software Interface, but those most easily accepted will follow a workflow
 similar to the following:
 
 1. **Comment on an existing issue or open a new issue referencing your addition.**  
@@ -44,9 +44,9 @@ similar to the following:
   
     [This blog][link_pushpullblog] is a nice explanation of why putting this work in up front is so useful to everyone involved.  
   
-    Discussing the change first is especially important for substantive changes to be made in the model directory. The Drawdown methodology has been published and undergone substantial peer review. Changes to the model have to be vetted, and ensure that they fit within the reviewed methodology.  
+    Discussing the change first is especially important for substantive changes to be made in the model directory. The GSA methodology has been published and undergone substantial peer review. Changes to the model have to be vetted, and ensure that they fit within the reviewed methodology.  
 
-1. **[Fork][link_fork] the [Drawdown Solutions repository][link_ddsolutions] to your profile.**  
+1. **[Fork][link_fork] the [GSA Software Interface repository][link_ddsolutions] to your profile.**  
 
     This is now your own unique copy of the codebase. Changes here won't affect anyone else's work, so it's a safe space to explore edits to the code.  
   
@@ -71,10 +71,6 @@ similar to the following:
 ## Notes for New Code
 
 #### Testing
-New code should be tested. Test coverage is a key deliverable of this project, we want the codebase to be
-amenable to extensions by the annual cohort of researchers and good coverage is essential to that.
-
-[![codecov](https://codecov.io/gh/ProjectDrawdown/solutions/branch/master/graph/badge.svg)](https://codecov.io/gh/ProjectDrawdown/solutions)
 
 Bug fixes must include an example that exposes the issue.
 New features should have tests that exercise its functionality. There is a [YouTube video describing the layers of testing](https://www.youtube.com/watch?v=K6P56qUkCrw0).
@@ -105,15 +101,15 @@ You're awesome. :wave::smiley:
 itself based on contributing guidelines from the [STEMMRoleModels][link_stemmrolemodels] project.*
 
 [link_github]: https://github.com/
-[link_ddsolutions]: https://github.com/ProjectDrawdown/solutions
+[link_ddsolutions]: https://github.com/Global-Solutions-Alliance/software-interface
 [link_signupinstructions]: https://help.github.com/articles/signing-up-for-a-new-github-account
-[link_issues]: https://github.com/ProjectDrawdown/solutions/issues
-[link_labels]: https://github.com/ProjectDrawdown/solutions/labels
+[link_issues]: https://github.com/Global-Solutions-Alliance/software-interface/issues
+[link_labels]: https://github.com/Global-Solutions-Alliance/software-interface/labels
 [link_discussingissues]: https://help.github.com/articles/discussing-projects-in-issues-and-pull-requests
 
-[link_bugs]: https://github.com/ProjectDrawdown/solutions/labels/bug
-[link_issue_template]: https://github.com/ProjectDrawdown/solutions/blob/master/.github/ISSUE_TEMPLATE.md
-[link_goodfirstissue]: https://github.com/ProjectDrawdown/solutions/issues?q=is%3Aopen+is%3Aissue+label%3Agood-first-issue
+[link_bugs]: https://github.com/Global-Solutions-Alliance/software-interface/labels/bug
+[link_issue_template]: https://github.com/Global-Solutions-Alliance/software-interface/blob/master/.github/ISSUE_TEMPLATE.md
+[link_goodfirstissue]: https://github.com/Global-Solutions-Alliance/software-interface/issues?q=is%3Aopen+is%3Aissue+label%3Agood-first-issue
 
 [link_pullrequest]: https://help.github.com/articles/creating-a-pull-request-from-a-fork/
 [link_fork]: https://help.github.com/articles/fork-a-repo/
@@ -123,4 +119,4 @@ itself based on contributing guidelines from the [STEMMRoleModels][link_stemmrol
 [link_cloning]: https://help.github.com/articles/cloning-a-repository/
 [link_stemmrolemodels]: https://github.com/KirstieJane/STEMMRoleModels
 [link_nipype]: https://github.com/nipy/nipype
-[link_zenodo]: https://github.com/ProjectDrawdown/solutions/blob/master/.zenodo.json
+[link_zenodo]: https://github.com/Global-Solutions-Alliance/software-interface/blob/master/.zenodo.json

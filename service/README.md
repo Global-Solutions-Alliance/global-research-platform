@@ -1,6 +1,6 @@
 # Global Research Platform Service
 
-This directory serves as the API service that will run the models for calculations and maintain data. The models are obtained from the [Solutions Repository](https://github.com/ProjectDrawdown/solutions).
+This directory serves as the API service that will run the models for calculations and maintain data. The models are obtained from the [GSA Model Engine](https://github.com/Global-Solutions-Alliance/model-engine).
 
 API Documentation could be found by running the application and accessing the `GET /docs`.
 

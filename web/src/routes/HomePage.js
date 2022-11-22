@@ -54,10 +54,10 @@ const HomePage = () => {
       <Stack spacing={9} mt={6}>
         <HomePageSection>
           <Heading as="h2" textStyle="caps">
-            Drawdown Global Research Platform
+            Global Solution Alliance Interface
           </Heading>
           <Text fontSize="1.2rem" marginTop="2rem" marginLeft="10%" marginRight="10%">
-            The Drawdown Global Research Platform is an ecosystem of researchers and contributors working together 1) to conduct rigorous research and analysis to identify the solutions to global warming and 2) to create a solutions-oriented knowledge commons and accompanying decision-support tools under the Drawdown Framework.
+            The Global Research Alliance system is an ecosystem of researchers and contributors working together 1) to conduct rigorous research and analysis to identify the solutions to global warming and 2) to create a solutions-oriented knowledge commons and accompanying decision-support tools under the GSA Framework.
           </Text>
           {/* <Text fontSize="xl">Research Platform</Text> */}
         </HomePageSection>

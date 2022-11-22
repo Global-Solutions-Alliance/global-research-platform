@@ -9,7 +9,7 @@ services:
     image: postgres:12
     environment:
       POSTGRES_HOST_AUTH_METHOD: trust
-      POSTGRES_DB: drawdown
+      POSTGRES_DB: gsa-db
     volumes:
       - pgdata:/var/lib/postgresql/data/
     ports:
@@ -22,7 +22,7 @@ services:
     volumes:
       - ./service:/app
     environment:
-      - DATABASE_URL=postgresql://postgres:postgres@db/drawdown
+      - DATABASE_URL=postgresql://postgres:postgres@db/gsa-db
       - API_URL=http://localhost:8000
       - JWT_SECRET_KEY=somejwtsecretkey
       - CLIENT_URL=http://localhost:3000

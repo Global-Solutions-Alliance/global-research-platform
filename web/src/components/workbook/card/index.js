@@ -63,7 +63,7 @@ const WorkbookCard = ({ workbook, to }) => {
             <Box fontSize="sm" textStyle="caps">
               Author: {" "}
             </Box>
-            <Box>{(workbook.author && workbook.author.email) || "Project Drawdown"}</Box>
+            <Box>{(workbook.author && workbook.author.email) || "Global Solution Alliance"}</Box>
             <Box fontSize="sm" textStyle="caps">
               Notes:{" "}
             </Box>

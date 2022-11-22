@@ -32,7 +32,7 @@ const MainPage = ({ location }) => {
         py={6}
         mx="auto"
       >
-        Welcome to the Drawdown Global Solutions Collaborative
+        Welcome to the Global Research Platform Interface
       </Heading>
       <VStack
         maxWidth="xl"

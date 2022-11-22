@@ -14,7 +14,7 @@ export const PageFooter = props => (
   >
     <Box>TODO: Privacy Policy and Contact links</Box>
     <Box textAlign="right" flex="1">
-      &copy; 2021 Drawdown Global Research Collaborative
+      &copy; 2021 Global Solution Alliance
     </Box>
   </Box>
 );
