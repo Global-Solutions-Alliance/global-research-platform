@@ -21,7 +21,7 @@ const Logo = (props) => (
     to="/"
     {...props}
   >
-    Drawdown Global Research Platform
+    Global Solution Alliance Interface
   </Box>
 )
 

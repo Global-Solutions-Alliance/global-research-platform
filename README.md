@@ -1,21 +1,28 @@
-# Project Drawdown Model Engine
-[Project Drawdown](https://www.drawdown.org/) is the most comprehensive plan yet published for how to solve Global Warming. Project Drawdown entered the climate conversation with the [publication of the 2017 book](https://www.drawdown.org/the-book). With [The Drawdown Review in 2020](https://drawdown.org/drawdown-framework/drawdown-review-2020), the project continues its mission to inspire and communicate solutions.
+# Global Solution Alliance Software Interface
 
-<img align="right" src="data/images/DrawdownReview2020.gif" />
+The Global Solutions Alliance (GSA) is an international nonprofit organization (based in the USA) composed of individual and organizational stakeholders aligned around a commitment to collective impact and creating holistic models to inspire and inform action. Through comprehensive, scientific data-driven tools collaboratively designed for use by policy makers, investors, NGOs and other on-the-ground decision-makers, change agents will be able to accelerate their work to solve global warming and secure reliable prosperity for communities in mutually beneficial relationships with the natural environment. 
 
-## Background
+The founding members of the GSA are Regenerative Intelligence PB LLC, CoLab Cooperative, Buckminster Fuller Institute, The World Fund, The Global Council for Science and the Environment, Grounded, Future Horizon/Future Quest and Sacred Headwaters of the Amazon.
 
-+ The Drawdown solution models [Project Drawdown Solutions Repo](https://github.com/ProjectDrawdown/solutions) are, at their core, economic models which estimate the total global and regional demand for each solution and the percentage of that demand each year which might adopt the Drawdown solution. The monetary and emissions impacts of that adoption are then calculated.
+The GSA originated from the recognition that cooperation in a system is integral to creating conditions for life to thrive. Rather than reinventing the wheel, which only stagnates implementation, leads to confusion, and slows progress, the GSA is an evolving ecosystem of partners that are committed to working together in mutually beneficial ways that support the emergence of regenerative economic and social systems. Addressing the global emergencies of warming, climate chaos, ecocide and species extinction requires humanity to move beyond siloed-thinking and work in-parallel towards a future that benefits all. 
 
-+ The framework and methodology for the model was developed by a core research team at Project Drawdown with a Head of Research and a set of Senior researchers who have worked with the project for several years.
+Our collective work always begins with rigorous research and analysis to identify the most impactful systemic solutions benefitting people and the planet. The GSA ecosystem of organizations, researchers, and contributors work together to create and maintain a solutions-orientated knowledge commons and accompanying tools hosted on the Solutions Collaboratory (‘Collaboratory’): a free and open source digital public good designed by and for the planet’s solutionists. 
 
-+ The solutions have been developed by [annual cohorts of researchers](https://www.drawdown.org/research-fellows), mostly graduate and postdoctoral students working six month stints to vet new data inputs and implement targeted model improvements.
+The Collaboratory serves as an open, objective, independent platform and community bringing the best available information and data to the fingertips of global change agents implementing solutions to the climate crisis, biodiversity loss, poverty and hunger, gender inequality, health and well-being, and regenerative economic growth.  
 
-+ Project Drawdown's solution models were originally constructed in Excel, with a large number of Excel files now existing. There are two releases of the Excel models which are relevant to this effort:
-    + 2019: released to the public in January 2019
-    + 2020: extended from the 2019 models by a new cohort of researchers, released as The Drawdown Review in March 2020.
+---
 
-+ The Excel files have mostly been converted into Python model code, in the "solutions" git repo mentioned above.
+## The GSA Solutions Collaboratory and Repos
+
+The Solutions Collaboratory is a digital platform designed with a multi-stakeholder, commons-based approach to knowledge and data sharing, code development, peer-to-peer collaboration, design, and end-user communications all in service to real solutions to advance a regenerative economy benefiting the planet and humanity. 
+
+Interdependent Pillars of the Solutions Collaboratory:
+
+- __The Global Solutions Alliance__. A membership-based, globally distributed network of independent and interconnected research associations, partners, and contributors who collaborate in building, maintaining, and evolving the Collaboratory as a living ecosystem.
+The Model Solutions Engine. The science-based modeling tool itself; a techno-economic discrete-time simulation model. It facilitates the integrated calculation of 15 areas of intervention including in natural systems (agriculture, land use, oceans), food systems, energy systems, and the built environment.
+- __The Software Solutions Interface__. The digital web platform that will be freely available to the public through web-based open interfaces/portals/APIs that are developed through collaborative, distributed design principles and inclusive user engagement. This will enable users to use the model at any scale of interest and experience an overview effect to understand how human civilization can reduce its impact on the planet, changing the way individuals see themselves, their actions, and their decisions, in relation to the whole.
+- __The Collaboration Tool Interface__. The digital web platform that will be freely available to the public that allows individuals and teams to collaborate on developing analyses, creating modeling scenarios, sharing data, comparing results across scenarios and sharing datasets and case studies. 
+- __The Knowledge Repository__. An open-source repository for data storage for all other pillars. Data here include source data (at varied geographical and local scales), model scenarios, case studies, and contributor data.
 
 ---
 
@@ -23,22 +30,19 @@
 Planned efforts include:
 
 + **Combined Model Implementation**
-See [Project Drawdown Solutions Repo](https://github.com/ProjectDrawdown/solutions) for the core model implementation.
+See [GSA Model Engine](https://github.com/Global-Solutions-Alliance/model-engine) for the core model implementation.
 
 + **UI aimed at researchers and broader audiences**
 This repo you are in right now is a web-based user interface for working with "workbooks" of solutions, primarily for use by researchers looking to work with the model but additionally potentially of use to decisionmakers and policymakers in specific topics. This git repo is the current implementation, which requires & imports the model repo listed above as the core calculation engine. There is currently rudimentary features for sharing and collaborating on user workbooks. The UI provides controls for manipulating the values in the model, displaying graphs and output data for the resulting calculations.
 
 ---
 
-![status](https://github.com/ProjectDrawdown/solutions/workflows/Drawdown%20Solutions%20Python%20application/badge.svg)
-[![codecov](https://codecov.io/gh/ProjectDrawdown/solutions/branch/master/graph/badge.svg)](https://codecov.io/gh/ProjectDrawdown/solutions)
-
 ## Getting the source code
 
 1. Get a copy of this source code:
 ```sh
-$ git clone https://github.com/ProjectDrawdown/global-research-platform
-$ cd global-research-platform
+$ git clone https://github.com/Global-Solutions-Alliance/software-interface
+$ cd software-interface
 $ git checkout develop
 ```
 
@@ -133,7 +137,7 @@ $ npm install
 You will need to have postgres running and you will need the psql program.
 ```sh
 $ psql -h 0.0.0.0 -p 5432 -U postgres
-postgres=# CREATE DATABASE drawdown;
+postgres=# CREATE DATABASE gsa-db;
 ```
 
 You will need to have postgres running. You will want a valid connection string contained in `service/api/.env` for `DATABASE_URL`. Using `pipenv shell` run the following to apply existing migrations:
@@ -156,7 +160,7 @@ $ npm run start
 ---
 ## Initializing the data
 
-To create the default workbooks, enter `localhost:8000/initialize` in your browser. This will generate a variety of data, including the 3 Drawdown canonical workbooks. This will also load some CSVs into the database for easy retrieval, and provide the data for the `localhost:8000/resource/{path}` endpoints.
+To create the default workbooks, enter `localhost:8000/initialize` in your browser. This will generate a variety of data, including the 3 Model Engine canonical workbooks. This will also load some CSVs into the database for easy retrieval, and provide the data for the `localhost:8000/resource/{path}` endpoints.
 
 To improve performance for the app, it is recommended you run `localhost:8000/calculate` for the 3 canonical workbooks as a first step, as this will cache results for all the technologies for the workbooks. Any variation updates, when calculated, will take advantage of this initial cache as much as possible.
 
@@ -198,20 +202,26 @@ This matches the existing .json files extracted from the original excel files. A
 ---
 
 ## License
-The python code for the model engine is licensed under the GNU Affero General Public license and subject to the license terms in the LICENSE file found in the top-level directory of this distribution and at [https://github.com/ProjectDrawdown/solutions](https://github.com/ProjectDrawdown/solutions). No part of this Project, including this file, may be copied, modified, propagated, or distributed except according to the terms contained in the LICENSE file.
 
-Data supplied from Project Drawdown (mostly in the form of CSV files) is licensed under the [CC-BY-NC-2.0](https://creativecommons.org/licenses/by-nc/2.0/) license for non-commercial use. The code for the model can be used (under the terms of the AGPL) to process whatever data the user wishes under whatever license the data carries. The data supplied for the Project Drawdown solutions is CC-BY-NC-2.0.
+The python code for the collaboratory is licensed under the GNU Affero General Public license and subject to the license terms in the LICENSE file. No part of this Project, including this file, may be copied, modified, propagated, or distributed except according to the terms contained in the LICENSE file.
+
+Data supplied (mostly in the form of CSV files) is licensed under the [CC-BY-NC-2.0](https://creativecommons.org/licenses/by-nc/2.0/) license for non-commercial use. The code for the model can be used (under the terms of the AGPL) to process whatever other data the user wishes under whatever license those data carry.
+
+---
+
+## Support
+Please use the [Issues List](https://github.com/Global-Solutions-Alliance/software-interface/issues) to report any bugs you find, or ask any questions you have.
 
 ---
 
 ## Acknowledgements
 
-Many thanks to the contributors of the &lt;code&gt;earth hackathon held at the Internet Archive on Sept. 5, 6, and 7 of 2018 which began this project. They are: Owen Barton, Robert L. Read, Denton Gentry, Henry Poole, Greg Elin, Marc Jones, and Stephanie Liu, in addition to Project Drawdown scientists and volunteers, Ryan Allard, Catherine Foster, Chad Frischmann, Kevin Bayuk, and Nick Peters.
-
-Huge thanks to Beni Bienz of The Climate Foundation for his work in implementing a substantial portion of the system.
+The initial versions of these repos were ported from those of Project Drawdown, which are in the public domain.
 
 ---
 
 ## Contact
 
-David Brooks (david@colab.coop) is currently the technical point of contact for this project.
+Nabil Sutjipto (nabil@colab.coop) is currently the technical point of contact for this project.
+
+
